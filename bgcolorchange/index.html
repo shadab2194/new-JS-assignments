@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color picker</title>
+</head>
+<body>
+    <div>
+        <h1>Color picker</h1>
+        <div>
+            <button id="btnred" onclick="changeColor(this.value)" value="red">Red</button>
+            <button id="btnblue" onclick="changeColor(this.value)" value="blue">Blue</button>
+            <button id="btngreen" onclick="changeColor(this.value)" value ="green">Green</button>
+        </div>
+           
+    </div>
+    <script>
+        function changeColor(value){
+            document.body.style.backgroundColor=value
+        }
+    </script>
+</body>
+</html>
